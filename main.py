@@ -200,7 +200,7 @@ def histogram(image: np.ndarray) -> list:
         list: histogram of our image
     """
     # Creating a list of zeros
-    h = [0 for i in range(0, 256)]
+    h = list(np.zeros(256))
 
     for x in range(image.shape[0]):
         for y in range(image.shape[1]):
